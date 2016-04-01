@@ -6,6 +6,7 @@
 	<!-- include AngularJS plus modules -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
 	<script src="https://code.angularjs.org/1.2.22/angular-route.js"></script>          
+	<script src="https://code.angularjs.org/1.2.22/angular-animate.js"></script>          
 
     <!-- include custom AngularJS files -->
     <script src="assets/js/app.js"></script>
@@ -23,9 +24,10 @@
 		    </ul>
 		</nav>
 	</div>
-		<div ng-view>
-			<!-- Content -->
-		</div>
+
+	<div class="page {{ pageClass }}" ng-view>
+		<!-- Content -->
+	</div>
 </div>
 
 </body>

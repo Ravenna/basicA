@@ -1,6 +1,7 @@
 /**
 * Main AngularJS Web Application
 */
-var app = angular.module('basicA', [
-	'ngRoute'
+var basicA = angular.module('basicA', [
+	'ngRoute',
+	'ngAnimate',
 ]);

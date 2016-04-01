@@ -1,9 +1,11 @@
-app.config(function($routeProvider){
+basicA.config(function($routeProvider){
 	$routeProvider
 		.when('/',{
-		    templateUrl: 'partials/_home.html'
+		    templateUrl: 'partials/_home.html',
+		    controller: 'homeController'
 		})
 		.when('/about',{
-		    templateUrl: 'partials/_about.html'
+		    templateUrl: 'partials/_about.html',
+		    controller: 'aboutController'
 		});
 });
