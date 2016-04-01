@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="basicA">
+<head>
+	<title></title>
+
+	<!-- include AngularJS plus modules -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.22/angular-route.js"></script>          
+
+    <!-- include custom AngularJS files -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/routes.js"></script>
+</head>
+<body >
+
+<div class="container">
+	<div class="nav-wrapper" ng-controller="navController">
+		<nav>
+		    <ul>
+		        <li><a href="#/">Home</a></li>
+		        <li><a href="#/about">About us</a></li>
+		    </ul>
+		</nav>
+	</div>
+		<div ng-view>
+			<!-- Content -->
+		</div>
+</div>
+
+</body>
+</html>
